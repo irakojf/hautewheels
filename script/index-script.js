@@ -31,12 +31,23 @@ function listenFormSubmit() {
     submitPromoCode(purchase_id);
 }
 
+
+// Event listener for when the user hits enter on mobile
 document.getElementById('promo').addEventListener('keydown', function(event) { 
     if (event.code === 'Enter') {
         console.log('listening');
         listenFormSubmit();     
     }
 })
+
+// Event listener for when the text input enters blur mode / keyboard closes on mobile
+document.getElementById('promo').addEventListener('blur', function() {
+    if (event.code === 'Enter') {
+        console.log('listening');
+        listenFormSubmit();     
+    }
+})
+
 
 function shake() { 
     // console.log('calling shake')
