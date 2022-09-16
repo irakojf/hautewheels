@@ -8,7 +8,7 @@ async function submitPromoCode(purchase_id) {
             let data = await response.json();
             if (response.status === 200) {
                 console.log(response.status);
-                location.assign("." + data + purchase_id); // location assign 
+                location.assign("." + data + purchase_id + ".html"); // location assign 
             } else {
                 console.log(response.status);
                 console.log("Incorrect purchase ID");
