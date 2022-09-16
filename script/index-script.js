@@ -42,10 +42,8 @@ document.getElementById('promo').addEventListener('keydown', function(event) {
 
 // Event listener for when the text input enters blur mode / keyboard closes on mobile
 document.getElementById('promo').addEventListener('blur', function() {
-    if (event.code === 'Enter') {
-        console.log('listening');
-        listenFormSubmit();     
-    }
+    console.log('listening');
+    listenFormSubmit();     
 })
 
 
