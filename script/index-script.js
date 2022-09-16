@@ -1,4 +1,6 @@
 async function submitPromoCode(purchase_id) {
+    var purchaseInputField = document.getElementById("promo");
+    purchaseInputField.classList.remove("invalid");
     let api = "https://8vc8x8ak9k.execute-api.us-east-1.amazonaws.com/v1/cars?id=" + purchase_id;
 
     fetch(api)
@@ -12,6 +14,7 @@ async function submitPromoCode(purchase_id) {
             } else {
                 console.log(response.status);
                 console.log("Incorrect purchase ID");
+                shake(); 
             }
         })
         .catch((err) => {
@@ -34,3 +37,9 @@ document.getElementById('promo').addEventListener('keydown', function(event) {
         listenFormSubmit();     
     }
 })
+
+function shake() { 
+    // console.log('calling shake')
+    var purchaseInputField = document.getElementById("promo");
+    purchaseInputField.classList.add("invalid");
+}
