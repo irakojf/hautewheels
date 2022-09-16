@@ -2,6 +2,12 @@ html {
     background-color: #252525;
 }
 
+@font-face {
+    font-family: 'Comic Sans MS';
+    src: url("./style/fonts/comic-sans-ms/comici.ttf");
+  }
+
+
 .logo {
     display: block;
     margin-left: auto;
