@@ -1,0 +1,45 @@
+html { 
+    background-color: #252525;
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    width: 70%;
+} 
+
+.body {
+    width: 100%;
+    /* Give us some room on the bottom */
+    margin-bottom: 20%;
+
+    background-color: #252525;
+    color: white; 
+
+    font-family: Quattrocento, Georgia, Times, 'Times New Roman', serif;
+    font-size: 4rem;
+}
+
+.submission-box { 
+    text-align: center;
+    font-family: Comic Sans MS;
+}
+
+.submission-box label { 
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.submission-box input { 
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 4rem;
+    font-family: Comic Sans MS;
+}
+
