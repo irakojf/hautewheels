@@ -1,0 +1,110 @@
+html { 
+    background-color: #252525;
+}
+
+@font-face {
+    font-family: 'Comic Sans MS';
+    src: url("./fonts/comic-sans-ms/comici.ttf");
+  }
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    width: 70%;
+} 
+
+.body {
+    width: 100%;
+    /* Give us some room on the bottom */
+    margin-bottom: 20%;
+
+    background-color: #252525;
+    color: white; 
+
+    font-family: Quattrocento, Georgia, Times, 'Times New Roman', serif;
+    font-size: 4rem;
+}
+
+.bodyText { 
+    margin-top: 20%;
+    margin-bottom: 45%;
+    margin-left: 10%;
+    margin-right: 10%;
+} 
+
+.bodyText p {
+    color: white; 
+    font-family: Quattrocento, Georgia, Times, 'Times New Roman', serif;
+    line-height: 5rem;
+    font-size: 3rem;
+    margin-bottom: 10%;
+}
+
+
+.bodyText a {
+    color: white; 
+    font-family: Quattrocento, Georgia, Times, 'Times New Roman', serif;
+    line-height: 5rem;
+    font-size: 3rem;
+    margin-bottom: 10%;
+}
+
+
+.grid-container { 
+    margin-top: 20%;
+    margin-bottom: 20%;
+    display: grid;
+    width: 100%;   
+    grid-template-columns: auto auto;
+}
+
+#aston-martin {
+    grid-column-start: 1; 
+    grid-column-end: 2; 
+    width: 100%;   
+    content: url("../img/about/aston-martin.png");
+}
+
+#aston-martin:hover {
+    opacity: 0.50;
+    content: url("../img/about/aston-martin-hw.png");
+}
+
+#bentley {
+    grid-column-start: 2; 
+    grid-column-end: 3; 
+    width: 100%;   
+    content: url("../img/about/bentley.png");
+}
+
+#bentley:hover {
+    opacity: 0.50;
+    content: url("../img/about/bentley-hw.png");
+}
+
+#toyota {
+    grid-column-start: 1; 
+    grid-column-end: 2; 
+    width: 100%;   
+    content: url("../img/about/toyota.png");
+}
+
+#toyota:hover {
+    opacity: 0.50;
+    content: url("../img/about/toyota-hw.png");
+}
+
+#lancia {
+    grid-column-start: 2; 
+    grid-column-end: 3; 
+    width: 100%;   
+    content: url("../img/about/lancia.png");
+}
+
+#lancia:hover {
+    opacity: 0.50;
+    content: url("../img/about/lancia-hw.png");
+}

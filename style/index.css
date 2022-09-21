@@ -29,6 +29,10 @@ html {
     font-size: 4rem;
 }
 
+.body a { 
+    color: white; 
+}
+
 .submission-box { 
     text-align: center;
     font-family: Comic Sans MS;
