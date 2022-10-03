@@ -15,7 +15,7 @@ function venmoNotification (url) {
     reload();
 }
 
-document.getElementById("cryptoNoti").addEventListener("click", venmoNotification);
+document.getElementById("cryptoNoti").addEventListener("click", cryptoNotification);
 
 function cryptoNotification (url) { 
     let accountName = document.getElementById("accountName").textContent;
