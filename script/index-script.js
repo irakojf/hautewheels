@@ -1,6 +1,7 @@
 async function submitPromoCode(purchase_id) {
     var purchaseInputField = document.getElementById("promo");
     purchaseInputField.classList.remove("invalid");
+    purchase_id = purchase_id.replace(/\D/g, '');
     let api = "https://8vc8x8ak9k.execute-api.us-east-1.amazonaws.com/v1/cars?id=" + purchase_id;
 
     fetch(api)
@@ -14,7 +15,7 @@ async function submitPromoCode(purchase_id) {
             } else {
                 console.log(response.status);
                 console.log("Incorrect purchase ID");
-                shake(); 
+                shake(); // call the shake function
             }
         })
         .catch((err) => {
