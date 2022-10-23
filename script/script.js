@@ -51,8 +51,6 @@ async function cryptoPriceChecker () {
 
     // update the innertext 
     document.getElementById("fiatValue").innerText = fiatValueFormatted;
-
-    reload();
 }
 
 cryptoPriceChecker();
